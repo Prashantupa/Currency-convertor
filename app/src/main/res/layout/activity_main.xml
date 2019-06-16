@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6EB3EB"
+        android:alpha="0.8"/>
+
+    <ImageView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/currency"
+        android:layout_marginTop="55dp"
+        android:scaleType="center"
+        android:layout_marginLeft="45dp"
+        android:alpha="0.9"
+        />
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Convert Your Cash Here!"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:textSize="32dp"
+        android:textColor="#0A0A0A"
+        android:background="#F8F4F4"
+        android:textStyle="bold|italic"
+        android:alpha="0.9"
+        />
+
+    <EditText
+        android:id="@+id/dollarAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/currency"
+        android:layout_marginTop="35dp"
+        android:hint="Enter Amounts in dollars"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/rupeeAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/convert1"
+        android:layout_marginTop="35dp"
+        android:hint="Enter Amounts in Rupees"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/convert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rupeeAmountEditText"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.9"
+        android:background="#A4EAF3"
+        android:onClick="convert1"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/convert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollarAmountEditText"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.9"
+        android:background="#A4EAF3"
+        android:onClick="convert"
+        android:text="Convert" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by @Prashant"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:background="#06A9F3"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
